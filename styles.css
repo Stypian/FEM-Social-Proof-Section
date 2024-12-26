@@ -1,0 +1,304 @@
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
+
+    * {
+        font-size: 10px;
+        font-family: 'League Spartan';
+    }
+
+    body {
+        margin: 0;
+    }
+
+    @font-face {
+        font-family: 'League Spartan';
+        font-style: normal;
+        font-weight: 100 900;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/leaguespartan/v11/kJEqBuEW6A0lliaV_m88ja5TwvZwLZk.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+    :root {
+        --very-dark-magenta: hsl(300, 43%, 22%);
+        --soft-pink: hsl(333, 80%, 67%);
+        --dark-gray-magenta: hsl(303, 10%, 53%);
+        --light-gray-magenta: rgb(247, 242, 247);
+    }
+
+    .socProof__bg {
+        width: 100%;
+        height: 100vh;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .socProof__bg-top {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .socProof__bg-bottom {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .socProof__cont {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-inline: 2rem;
+    }
+
+    .socProof__top-half {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .socProof__top-left {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 8rem;
+    }
+
+    .socProof__top-right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .socProof__review-wrap {
+        display: flex;
+        height: 5.4rem;
+        margin-bottom: 1.6rem;
+        align-items: center;
+        border-radius: 6px;
+        width: 42rem;
+        background-color: var(--light-gray-magenta);
+        padding-right: 3.2rem;
+    }
+
+    .socProof__star-wrap {
+        margin-block: 0;
+        display: flex;
+        gap: .9rem;
+        margin-left: 3.8rem;
+    }
+
+    .socProof__review-wrap--one {
+        margin-top: 3rem;
+        margin-right: 8rem;
+    }
+
+    .socProof__review-wrap--two {
+        margin-right: 4rem;
+    }
+   
+    .socProof__h1 {
+        font-size: 5rem;
+        color: var(--very-dark-magenta);
+        font-weight: 700;
+        margin-bottom: 2.2rem;
+        /*margin-right: -25rem;*/
+        margin-top: 0;
+        max-width: 32rem;
+    }
+
+    .socProof__p {
+        font-size: 1.8rem;
+        color: var(--dark-gray-magenta);
+        font-weight: 500;
+        max-width:45rem;
+        line-height: 1.3;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .socProof__p--review {
+        margin-block: 0;
+        margin-left: 3rem;
+        color: var(--very-dark-magenta);
+        font-weight: 700;
+        white-space: nowrap;
+    }
+
+    .socProof__bottom-half {
+        width: auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 3rem;
+    }
+
+    .socProof__review-box {
+        max-width: 35rem;
+        height: 22rem;
+        display: flex;
+        border-radius: .8rem;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--very-dark-magenta);
+    }
+
+    .socProof__review-box--two {
+        margin-top: 1.8rem;
+    }
+
+    .socProof__review-box--three {
+        margin-top: 3.6rem;
+    }
+
+    .socProof__box-inner {
+        width: 78.2%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .socProof__prof-wrap {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .socProof__prof-img {
+        border-radius: 50%;
+        width: 3.8rem;
+        margin-right: 2rem;
+    }
+
+    .socProof__name-p {
+        font-size: 1.6rem;
+        color: #fff;
+        margin-top: .5rem;
+        margin-bottom: .4rem;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+
+    .socProof__name-p--purple {
+        color: #D279B3;
+        margin-top: 0;
+        font-weight: 400;
+    }
+
+    .socProof__box-p {
+        font-size: 1.6rem;
+        color: #fff;
+        padding-top: 1rem;
+        line-height: 1.4;
+        font-weight: 400;
+    }
+
+    @media screen and (max-width: 980px) {
+        .socProof__top-half {
+            flex-direction: column;
+        }
+
+        .socProof__bottom-half {
+            flex-direction: column;
+        }
+
+        .socProof__bg {
+            height: auto;
+            padding-block: 2rem;
+        }
+
+        .socProof__h1, .socProof__p {
+            text-align: center;
+        }
+
+        .socProof__p {
+            margin-top: 0;
+            /*width: 102%;*/
+            font-size: 1.78rem;
+        }
+
+        .socProof__cont {
+            padding-inline: 2rem;
+        }
+
+        .socProof__top-left, .socProof__top-right {
+            align-items: center;
+        }
+
+        .socProof__top-left {
+            padding-bottom: 2rem;
+        }
+
+        .socProof__top-right {
+            padding-bottom: 3rem;
+        }
+
+        .socProof__review-wrap {
+            margin-inline: 0;
+            padding-inline: 0;
+            padding-top: 1rem;
+            flex-direction: column;
+            gap: 1rem;
+            width: 100%;
+        }
+
+        .socProof__star-wrap {
+            margin: 0;
+        }
+
+        .socProof__review-box {
+            margin-block: 0;
+        }
+
+        .socProof__p--review {
+            font-size: 1.7rem;
+        }
+
+        .socProof__h1 {
+            font-size: clamp(4rem, 8vw, 5rem);
+        }
+        
+    }
+
+    @media screen and (max-width: 375px) {
+        .socProof__bg-bottom, .socProof__bg-top {
+            width: 100%;
+        }
+
+        .socProof__review-box {
+            padding-bottom: 1rem;
+        }
+
+        .socProof__box-inner {
+            width: 77%;
+        }
+    }
+
+    @media screen and (max-width: 340px) {
+        .socProof__review-box {
+            padding-bottom: 2rem;
+        }
+
+    }
+
+    @media screen and (max-width: 280px) {
+        .socProof__box-inner {
+           overflow: scroll;
+        }
+
+    }
+
+
+
+
+
+
